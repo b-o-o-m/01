@@ -1,0 +1,81 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Smart Device Camera Template for HTML, CSS, JS and WebRTC">
+  <meta name="keywords" content="HTML,CSS,JavaScript, WebRTC, Camera">
+  <meta name="author" content="Kasper Kamperman">
+  <title>Mobile First Camera Template</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body>
+ 
+
+ 
+<div class="demo-container">
+  
+  <div class="slide-indicator">
+    <div class="dot dot-1" where="1"></div>
+    <div class="dot dot-2" where="2"></div>
+    <div class="dot dot-3" where="3"></div>
+    <div class="dot dot-4" where="4"></div>
+    <div class="dot dot-5" where="5"></div>
+    <div class="dot dot-6" where="6"></div>
+    <div class="dot dot-7" where="7"></div>
+  </div>
+  <div class="property-hack"></div>
+</div>
+
+
+
+
+
+  <div id="container">
+    
+    <div id="vid_container">
+        <video id="video" autoplay playsinline></video>
+        <div id="video_overlay"></div>
+    </div>
+    <div id="gui_controls">
+      <div class="slides">
+    <div class="slide slide-1">
+      <div class="bg bg-1">
+        <div class="overlay">Tutorial</div>
+      </div>
+    </div>
+    <div class="slide slide-2">
+      <div class="bg bg-2">
+        <div class="overlay">Slide #2</div>
+      </div>
+    </div>
+    <div class="slide slide-3">
+      <div class="bg bg-3">
+        <div class="overlay">Slide #3</div>
+      </div>
+    </div>
+        <div class="slide slide-4">
+      <div class="bg bg-4">
+        <div class="overlay">Slide #4</div>
+      </div>
+    </div>
+        <div class="slide slide-5">
+      <div class="bg bg-5">
+        <div class="overlay">Slide #5</div>
+      </div>
+    </div>
+  </div>
+        <button id="switchCameraButton" name="switch Camera" type="button" aria-pressed="false"></button>
+        <button id="takePhotoButton" name="take Photo" type="button"></button>
+        <button id="toggleFullScreenButton" name="toggle FullScreen" type="button" aria-pressed="false"></button>
+    </div>
+  </div> 
+  <script src="js/DetectRTC.min.js"></script>
+
+  <script src="js/screenfull.min.js"></script>
+  <script src="js/howler.core.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
